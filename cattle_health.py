@@ -94,9 +94,9 @@ if subdirs:
 
                 # Display results
                 if best_score > THRESHOLD:
-                    st.success(f"✅ Match Found: {best_score} good matches.")
+                    st.success(f"✅ Match Found, Score:{best_score}")
                 else:
-                    st.error(f"❌ No Match: Only {best_score} good matches.")
+                    st.error(f"❌ No Match")
 
             else:
                 st.warning("No matches found!")
