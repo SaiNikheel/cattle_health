@@ -77,8 +77,6 @@ if subdirs:
 
             # Display the best match results
             if best_match:
-                st.success(f"✅ Best Match Found: {os.path.basename(best_match)} with {best_score} good matches.")
-                
                 # Draw keypoints and matches
                 bf = cv2.BFMatcher()
                 matches = bf.knnMatch(sift.detectAndCompute(cv2.cvtColor(best_img, cv2.COLOR_BGR2GRAY), None)[1], descriptors2, k=2)
