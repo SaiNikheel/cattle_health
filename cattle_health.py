@@ -19,7 +19,7 @@ def get_all_images(sub_dir):
     return [os.path.join(sub_dir, img) for img in image_files]
 
 # Streamlit UI
-st.title("Cattle Nose Pattern Matching (Brute Force)")
+st.title("Cattle Muzzle Recognition")
 
 # Select a subdirectory
 base_dir = "Cattle_data"
